@@ -31,8 +31,6 @@ public class Waits {
         WebElement myLink = wait.until(ExpectedConditions.elementToBeClickable(By.partialLinkText("Automation Step by Step:")));
         myLink.click();
 
-
-
         // closing the browser
         driver.close();
         driver.quit();
