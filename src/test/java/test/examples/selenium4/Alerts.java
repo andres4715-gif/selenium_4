@@ -1,4 +1,4 @@
-package test.examples;
+package test.examples.selenium4;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Alert;
