@@ -12,7 +12,7 @@ Selenium 4 Beginner Tutorial 8 | Keyboard Actions
 # selenium 3 with Maven.
 ### Video youtube course: [Link](https://www.youtube.com/watch?v=nCJoia7wosc&list=PLhW3qG5bs-L8oRay6qeS70vJYZ3SBQnFa&index=1&t=135s)
 ## To continue:
-Video [3](https://www.youtube.com/watch?v=L4auw2m9W-w&list=PLhW3qG5bs-L8oRay6qeS70vJYZ3SBQnFa&index=3)
+Video [10](https://www.youtube.com/watch?v=tnWig6KfQ9w&list=PLhW3qG5bs-L8oRay6qeS70vJYZ3SBQnFa&index=10)
 Selenium Framework for Beginners 2 | How to run Selenium tests on Firefox - Geckodriver
 
 # practice Automation
