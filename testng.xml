@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Selenium Practice with testng" verbose="1" >
+
+    <test name="Regression with testNG">
+        <classes>
+            <class name="test.examples.selenium3.ExtendsReportWithTestNg"/>
+            <class name="test.examples.selenium3.googleSearchPomTestPageObjectTestNg"/>
+        </classes>
+    </test>
+</suite>
