@@ -70,7 +70,7 @@ public class Setup {
         dropDownCountry.selectByVisibleText("BAKER ISLAND");
     }
 
-    public static void DownloadAndUpload(WebDriver driver) {
+    public static void upload(WebDriver driver) {
 
         driver.get("https://demo.guru99.com/test/upload/");
         WebElement uploadElement = driver.findElement(By.id("uploadfile_0"));

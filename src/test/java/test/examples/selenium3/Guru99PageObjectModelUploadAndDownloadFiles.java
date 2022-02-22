@@ -23,7 +23,7 @@ public class Guru99PageObjectModelUploadAndDownloadFiles {
     }
 
     @Test(priority = 1)
-    public static void uploadAndDownloadFiles() throws InterruptedException {
-        Setup.DownloadAndUpload(driver);
+    public static void uploadFiles() {
+        Setup.upload(driver);
     }
 }
