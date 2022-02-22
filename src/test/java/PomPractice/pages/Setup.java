@@ -86,4 +86,28 @@ public class Setup {
         String innerText = driver.findElement(By.xpath("//table/tbody/tr[2]/td[2]")).getText();
         System.out.println("this cell is: " + innerText);
     }
+
+    public static void specificDataTable(WebDriver driver) {
+        String baseUrl = "http://demo.guru99.com/test/web-table-element.php";
+        driver.get(baseUrl);
+        WebElement getDaily = driver.findElement(By.xpath("//*[@id='leftcontainer']/table/thead/tr/th[1]"));
+        System.out.println(getDaily.getText());
+    }
+
+    public static void dinamicDataTable(WebDriver driver) {
+        String baseUrl = "http://demo.guru99.com/test/web-table-element.php";
+        driver.get(baseUrl);
+        // The column number
+        List<WebElement> col = driver.findElements(By.xpath("//*[@class='dataTable']/thead/tr/th"));
+        System.out.println("The colum elements are: " + col.size());
+
+        // The rows number
+        List<WebElement> rows = driver.findElements(By.xpath("//*[@id='leftcontainer']/table/tbody/tr"));
+        System.out.println("The row elements are: " + rows.size());
+
+        // data table.
+        for(WebElement data : rows) {
+        System.out.println(data.getText());
+        }
+    }
 }
