@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -59,5 +60,13 @@ public class Setup {
         driver.findElement(By.id("vfb-6-0")).click();
         driver.findElement(By.id("vfb-6-1")).click();
         driver.findElement(By.id("vfb-6-2")).click();
+    }
+
+    // I need to import this:
+    // import org.openqa.selenium.support.ui.Select;
+    public static void dropDown(WebDriver driver) {
+        driver.get("http://demo.guru99.com/test/newtours/register.php");
+        Select dropDownCountry = new Select(driver.findElement(By.name("country")));
+        dropDownCountry.selectByVisibleText("BAKER ISLAND");
     }
 }
