@@ -31,7 +31,7 @@ public class Setup {
         List<WebElement> elements = driver.findElements(By.name("name"));
         System.out.println("Number of elements: " + elements.size());
 
-        for(WebElement element : elements) {
+        for (WebElement element : elements) {
             System.out.println(element.getAttribute("value"));
         }
     }
@@ -68,5 +68,16 @@ public class Setup {
         driver.get("http://demo.guru99.com/test/newtours/register.php");
         Select dropDownCountry = new Select(driver.findElement(By.name("country")));
         dropDownCountry.selectByVisibleText("BAKER ISLAND");
+    }
+
+    public static void DownloadAndUpload(WebDriver driver) {
+
+        driver.get("https://demo.guru99.com/test/upload/");
+        WebElement uploadElement = driver.findElement(By.id("uploadfile_0"));
+        WebElement send = driver.findElement(By.id("submitbutton"));
+        uploadElement.sendKeys("/Users/andresrios/Desktop/WebDriverAgent.xcodeproj");
+        WebElement terms = driver.findElement(By.id("terms"));
+        terms.click();
+        send.click();
     }
 }
