@@ -48,4 +48,16 @@ public class Setup {
         password.sendKeys("password123456");
         logIn.submit();
     }
+
+    public static void radioButton(WebDriver driver) {
+        driver.get("https://demo.guru99.com/test/radio.html");
+        driver.findElement(By.id("vfb-7-1")).click();
+        driver.findElement(By.id("vfb-7-2")).click();
+    }
+
+    public static void checkBox(WebDriver driver) {
+        driver.findElement(By.id("vfb-6-0")).click();
+        driver.findElement(By.id("vfb-6-1")).click();
+        driver.findElement(By.id("vfb-6-2")).click();
+    }
 }
