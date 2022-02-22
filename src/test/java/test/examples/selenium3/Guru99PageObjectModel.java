@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeSuite;
 
 import org.testng.annotations.Test;
 
-public class Guru99 {
+public class Guru99PageObjectModel {
 
     public static WebDriver driver;
 
