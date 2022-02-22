@@ -71,7 +71,6 @@ public class Setup {
     }
 
     public static void upload(WebDriver driver) {
-
         driver.get("https://demo.guru99.com/test/upload/");
         WebElement uploadElement = driver.findElement(By.id("uploadfile_0"));
         WebElement send = driver.findElement(By.id("submitbutton"));

@@ -7,7 +7,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-public class Guru99PageObjectModelUploadAndDownloadFiles {
+public class Guru99PageObjectModelUploadFiles {
 
     public static WebDriver driver;
 
