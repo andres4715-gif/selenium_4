@@ -13,6 +13,11 @@ public class Setup {
         WebDriverManager.chromedriver().setup();
     }
 
+    public static void after(WebDriver driver) throws InterruptedException {
+        Thread.sleep(3000);
+        driver.close();
+    }
+
     public static void gettingPageAndClick(WebDriver driver) throws InterruptedException {
         driver.get("http://demo.guru99.com/test/ajax.html");
         driver.findElement(By.id("no")).click();
@@ -30,8 +35,17 @@ public class Setup {
         }
     }
 
-    public static void after(WebDriver driver) throws InterruptedException {
-        Thread.sleep(3000);
-        driver.close();
+    public static void inputValuesForm(WebDriver driver) {
+        driver.get("https://demo.guru99.com/test/login.html#");
+        WebElement email = driver.findElement(By.id("email"));
+        WebElement logIn = driver.findElement(By.id("SubmitLogin"));
+        WebElement password = driver.findElement(By.name("passwd"));
+        email.sendKeys("andres777@gmail.com");
+        password.sendKeys("password123456");
+        email.clear();
+        password.clear();
+        email.sendKeys("andres777@gmail.com");
+        password.sendKeys("password123456");
+        logIn.submit();
     }
 }
