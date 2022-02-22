@@ -16,7 +16,7 @@ public class ExtendsReportWithTestNg {
         driver = new ChromeDriver();
     }
 
-    @Test
+    @Test(priority = 1, alwaysRun = true)
     public void searchGoobleResult() {
         GoogleSearchPageObjects searchPageObj = new GoogleSearchPageObjects(driver);
         driver.get("https://www.google.com/");

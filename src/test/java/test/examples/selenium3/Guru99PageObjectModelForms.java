@@ -22,7 +22,7 @@ public class Guru99PageObjectModelForms {
         Setup.after(driver);
     }
 
-    @Test
+    @Test(priority = 1, alwaysRun = true)
     public static void openGuruPage() {
         Setup.inputValuesForm(driver);
     }

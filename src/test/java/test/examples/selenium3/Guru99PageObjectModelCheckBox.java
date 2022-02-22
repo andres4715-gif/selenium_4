@@ -20,7 +20,7 @@ public class Guru99PageObjectModelCheckBox {
         Setup.after(driver);
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, alwaysRun = true)
     public static void checkingRadioButton() {
         Setup.radioButton(driver);
         Setup.checkBox(driver);

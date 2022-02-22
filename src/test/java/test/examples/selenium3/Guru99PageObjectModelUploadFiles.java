@@ -22,7 +22,7 @@ public class Guru99PageObjectModelUploadFiles {
         Setup.after(driver);
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, alwaysRun = true)
     public static void uploadFiles() {
         Setup.upload(driver);
     }

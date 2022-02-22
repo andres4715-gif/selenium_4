@@ -18,7 +18,7 @@ public class googleSearchPomTestPageObjectTestNg {
         driver = new ChromeDriver();
     }
 
-    @Test
+    @Test(priority = 1, alwaysRun = true)
     public void googleSearchTest() throws InterruptedException {
         GoogleSearchPageObjects searchPageObj = new GoogleSearchPageObjects(driver);
 

@@ -22,7 +22,7 @@ public class Guru99PageObjectModelDropDown {
         Setup.after(driver);
     }
 
-    @Test(priority = 1)
+    @Test(priority = 5, alwaysRun = true)
     public static void checkingRadioButton() {
         Setup.dropDown(driver);
     }

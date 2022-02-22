@@ -22,7 +22,7 @@ public class Guru99PageObjectModelDinamicTable {
         Setup.after(wd);
     }
 
-    @Test(priority = 1)
+    @Test(priority = 4, alwaysRun = true)
     public static void checkingRadioButton() {
         Setup.specificDataTable(wd);
         Setup.dinamicDataTable(wd);

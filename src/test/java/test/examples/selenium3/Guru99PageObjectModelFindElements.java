@@ -20,7 +20,7 @@ public class Guru99PageObjectModelFindElements {
         Setup.after(driver);
     }
 
-    @Test
+    @Test(priority = 1, alwaysRun = true)
     public static void openGuruPage() throws InterruptedException {
         Setup.gettingElementsValues(driver);
     }

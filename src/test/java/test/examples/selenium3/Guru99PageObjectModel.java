@@ -17,7 +17,7 @@ public class Guru99PageObjectModel {
         driver = new ChromeDriver();
     }
 
-    @Test
+    @Test(priority = 1, alwaysRun = true)
     public static void openGuruPage() throws InterruptedException {
         Setup.gettingPageAndClick(driver);
     }
