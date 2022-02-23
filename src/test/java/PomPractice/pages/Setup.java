@@ -19,14 +19,12 @@ public class Setup {
         driver.close();
     }
 
-    public static void gettingPageAndClick(WebDriver driver) throws InterruptedException {
+    public static void gettingPageAndClick(WebDriver driver) {
         driver.get("http://demo.guru99.com/test/ajax.html");
         driver.findElement(By.id("no")).click();
-        Thread.sleep(3000);
-        driver.close();
     }
 
-    public static void gettingElementsValues(WebDriver driver) throws InterruptedException {
+    public static void gettingElementsValues(WebDriver driver) {
         driver.get("http://demo.guru99.com/test/ajax.html");
         List<WebElement> elements = driver.findElements(By.name("name"));
         System.out.println("Number of elements: " + elements.size());

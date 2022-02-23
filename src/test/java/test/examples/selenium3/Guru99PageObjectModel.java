@@ -3,13 +3,14 @@ package test.examples.selenium3;
 import PomPractice.pages.Setup;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 
 import org.testng.annotations.Test;
 
 public class Guru99PageObjectModel {
 
-    public static WebDriver driver;
+    private static WebDriver driver;
 
     @BeforeSuite
     public void setup() {
@@ -18,7 +19,13 @@ public class Guru99PageObjectModel {
     }
 
     @Test(priority = 1, alwaysRun = true)
-    public static void openGuruPage() throws InterruptedException {
+    public void openGuruPage() {
         Setup.gettingPageAndClick(driver);
+    }
+
+    @AfterTest
+    public void close() throws InterruptedException {
+        Thread.sleep(3000);
+        driver.close();
     }
 }

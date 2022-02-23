@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class Guru99PageObjectModelDinamicTable {
 
-    public static WebDriver wd;
+    private static WebDriver wd;
 
     @BeforeSuite
     public void setup() {
@@ -17,14 +17,14 @@ public class Guru99PageObjectModelDinamicTable {
         wd = new ChromeDriver();
     }
 
+    @Test(priority = 4, alwaysRun = true)
+    public void checkingRadioButton() {
+        Setup.specificDataTable(wd);
+        Setup.dinamicDataTable(wd);
+    }
+
     @AfterSuite
     public void after() throws InterruptedException {
         Setup.after(wd);
-    }
-
-    @Test(priority = 4, alwaysRun = true)
-    public static void checkingRadioButton() {
-        Setup.specificDataTable(wd);
-        Setup.dinamicDataTable(wd);
     }
 }

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class Guru99PageObjectModelUploadFiles {
 
-    public static WebDriver driver;
+    private static WebDriver driver;
 
     @BeforeSuite
     public void setup() {
@@ -17,13 +17,13 @@ public class Guru99PageObjectModelUploadFiles {
         driver = new ChromeDriver();
     }
 
+    @Test(priority = 1, alwaysRun = true)
+    public void uploadFiles() {
+        Setup.upload(driver);
+    }
+
     @AfterSuite
     public void after() throws InterruptedException {
         Setup.after(driver);
-    }
-
-    @Test(priority = 1, alwaysRun = true)
-    public static void uploadFiles() {
-        Setup.upload(driver);
     }
 }

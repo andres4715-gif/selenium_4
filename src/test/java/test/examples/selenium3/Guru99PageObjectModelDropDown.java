@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class Guru99PageObjectModelDropDown {
 
-    public static WebDriver driver;
+    private static WebDriver driver;
 
     @BeforeSuite
     public void setup() {
@@ -17,13 +17,13 @@ public class Guru99PageObjectModelDropDown {
         driver = new ChromeDriver();
     }
 
+    @Test(priority = 5, alwaysRun = true)
+    public void checkingRadioButton() {
+        Setup.dropDown(driver);
+    }
+
     @AfterSuite
     public void after() throws InterruptedException {
         Setup.after(driver);
-    }
-
-    @Test(priority = 5, alwaysRun = true)
-    public static void checkingRadioButton() {
-        Setup.dropDown(driver);
     }
 }

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class Guru99PageObjectModelTable {
 
-    public static WebDriver driver;
+    private static WebDriver driver;
 
     @BeforeSuite
     public void setup() {
@@ -17,13 +17,13 @@ public class Guru99PageObjectModelTable {
         driver = new ChromeDriver();
     }
 
+    @Test(priority = 1, alwaysRun = true)
+    public void checkingRadioButton() {
+        Setup.table(driver);
+    }
+
     @AfterSuite
     public void after() throws InterruptedException {
         Setup.after(driver);
-    }
-
-    @Test(priority = 1, alwaysRun = true)
-    public static void checkingRadioButton() {
-        Setup.table(driver);
     }
 }

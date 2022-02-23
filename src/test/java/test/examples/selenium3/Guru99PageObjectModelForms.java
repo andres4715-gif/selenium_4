@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class Guru99PageObjectModelForms {
 
-    public static WebDriver driver;
+    private static WebDriver driver;
 
     @BeforeTest
     public void setup() {
@@ -17,13 +17,13 @@ public class Guru99PageObjectModelForms {
         driver = new ChromeDriver();
     }
 
+    @Test(priority = 1, alwaysRun = true)
+    public void openGuruPage() {
+        Setup.inputValuesForm(driver);
+    }
+
     @AfterTest
     public void after() throws InterruptedException {
         Setup.after(driver);
-    }
-
-    @Test(priority = 1, alwaysRun = true)
-    public static void openGuruPage() {
-        Setup.inputValuesForm(driver);
     }
 }

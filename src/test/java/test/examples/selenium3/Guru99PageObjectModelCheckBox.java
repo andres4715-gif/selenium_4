@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 
 public class Guru99PageObjectModelCheckBox {
 
-    public static WebDriver driver;
+    private static WebDriver driver;
 
     @BeforeSuite
     public void setup() {
@@ -15,14 +15,14 @@ public class Guru99PageObjectModelCheckBox {
         driver = new ChromeDriver();
     }
 
+    @Test(priority = 1, alwaysRun = true)
+    public void checkingRadioButton() {
+        Setup.radioButton(driver);
+        Setup.checkBox(driver);
+    }
+
     @AfterSuite
     public void after() throws InterruptedException {
         Setup.after(driver);
-    }
-
-    @Test(priority = 1, alwaysRun = true)
-    public static void checkingRadioButton() {
-        Setup.radioButton(driver);
-        Setup.checkBox(driver);
     }
 }

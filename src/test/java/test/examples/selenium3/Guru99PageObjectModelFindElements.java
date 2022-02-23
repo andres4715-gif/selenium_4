@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 
 public class Guru99PageObjectModelFindElements {
 
-    public static WebDriver driver;
+    private static WebDriver driver;
 
     @BeforeTest
     public void setup() {
@@ -15,13 +15,13 @@ public class Guru99PageObjectModelFindElements {
         driver = new ChromeDriver();
     }
 
+    @Test(priority = 1, alwaysRun = true)
+    public void openGuruPage() {
+        Setup.gettingElementsValues(driver);
+    }
+
     @AfterTest
     public void after() throws InterruptedException {
         Setup.after(driver);
-    }
-
-    @Test(priority = 1, alwaysRun = true)
-    public static void openGuruPage() throws InterruptedException {
-        Setup.gettingElementsValues(driver);
     }
 }

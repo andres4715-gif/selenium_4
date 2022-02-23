@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class googleSearchPomTestPageObjectTestNg {
 
-    private static WebDriver driver = null;
+    private static WebDriver driver;
 
     @BeforeTest
     public void setUpTest() {
@@ -19,9 +19,8 @@ public class googleSearchPomTestPageObjectTestNg {
     }
 
     @Test(priority = 1, alwaysRun = true)
-    public void googleSearchTest() throws InterruptedException {
+    public void googleSearchTest() {
         GoogleSearchPageObjects searchPageObj = new GoogleSearchPageObjects(driver);
-
         driver.get("https://www.google.com/");
         searchPageObj.setTextInSearchBox("Cucumber");
     }
