@@ -9,7 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class googleSearchPomTest {
+public class GoogleSearchPomTest {
 
     private static WebDriver driver;
 

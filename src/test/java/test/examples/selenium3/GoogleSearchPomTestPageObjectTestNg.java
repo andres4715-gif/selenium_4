@@ -8,12 +8,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class googleSearchPomTestPageObject {
+public class GoogleSearchPomTestPageObjectTestNg {
 
     private static WebDriver driver;
 
     @BeforeTest
-    public void setup() {
+    public void setUpTest() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
     }
@@ -25,8 +25,18 @@ public class googleSearchPomTestPageObject {
         searchPageObj.setTextInSearchBox("Cucumber");
     }
 
+    @Test
+    public void checkSuma() {
+        System.out.println(suma(1, 2));
+    }
+
+    public int suma(int num1, int num2) {
+        int total = num1 + num2;
+        return total;
+    }
+
     @AfterTest
-    public void close() throws InterruptedException {
+    public void closeBrowser() throws InterruptedException {
         Thread.sleep(2000);
         driver.close();
         driver.quit();

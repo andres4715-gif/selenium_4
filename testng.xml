@@ -5,7 +5,7 @@
     <test name="Regression with testNG">
         <classes>
             <class name="test.examples.selenium3.ExtendsReportWithTestNg"/>
-            <class name="test.examples.selenium3.googleSearchPomTestPageObjectTestNg"/>
+            <class name="test.examples.selenium3.GoogleSearchPomTestPageObjectTestNg"/>
         </classes>
     </test>
 </suite>
