@@ -24,7 +24,9 @@ Selenium Framework for Beginners 12 | What is Desired Capabilities | How to add 
 
 ### Pages to seach information about Selenium
 
-[Guru99](https://www.guru99.com/selenium-tutorial.html)
+[Guru99 webPage](https://www.guru99.com/selenium-tutorial.html)
+
+[Responsive youtube](https://www.youtube.com/watch?v=RHtCRDu0MWs)
 
 # practice Automation
 
