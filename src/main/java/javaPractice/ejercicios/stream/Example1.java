@@ -33,6 +33,7 @@ public class Example1 {
         List data = words
                 .stream()
                 .filter(s -> s.startsWith("i"))
+                .sorted()
                 .collect(Collectors.toList());
         System.out.println("The data is: " + data);
     }
