@@ -5,7 +5,7 @@ package javaPractice.arrays;
 
 import java.util.Scanner;
 
-public class example2_array {
+public class RecorriendoElArray {
 
     public static void main(String[] args) {
 

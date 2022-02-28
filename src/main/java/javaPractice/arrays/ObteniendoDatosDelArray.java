@@ -1,6 +1,6 @@
 package javaPractice.arrays;
 
-public class example1_array {
+public class ObteniendoDatosDelArray {
 
     public static void main(String[] args) {
 
