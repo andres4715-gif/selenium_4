@@ -2,7 +2,7 @@ package javaPractice.arrayList;
 
 import java.util.ArrayList;
 
-public class Emple3_creandoListas1 {
+public class CreandoListas1 {
     public static void main(String[] args) {
 
         ArrayList<String> canciones = new ArrayList<>();
