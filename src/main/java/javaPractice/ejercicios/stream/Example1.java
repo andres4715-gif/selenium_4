@@ -2,6 +2,7 @@ package javaPractice.ejercicios.stream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Example1 {
 
@@ -27,5 +28,12 @@ public class Example1 {
                 .stream()
                 .filter(s -> s.startsWith("i")).count();
         System.out.println("METODO STREAMS CON JAVA 8) La cantida que inicia con i son: " + numbers);
+
+        // Despues de obtener el collector partiendo de un string es posible objeter los datos de esta forma:
+        List data = words
+                .stream()
+                .filter(s -> s.startsWith("i"))
+                .collect(Collectors.toList());
+        System.out.println("The data is: " + data);
     }
 }
