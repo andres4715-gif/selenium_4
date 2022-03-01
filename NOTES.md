@@ -20,6 +20,23 @@
 ## Para darle una mirada a las listas: 
 * [Listas](http://panamahitek.com/el-uso-de-listas-en-java/)
 
+# POO.
+
+## Los 4 pilares de la POO.
+```text
+- Abstracción 
+- Encapsulamiento
+- Herencia 
+- Polimorfismo
+```
+
+## Que es polimorfismo: 
+```text
+Es la habilidad de un objeto para realizar una accion de diferentes maneras 
+ya que estás se implementan de forma diferente en cada una de las clases. 
+
+```
+
 ## Que es una clase abstracta y la diferencia con una interface: 
 * You can check this [video](https://www.youtube.com/watch?v=Id3kTuEPB_s)
 ```text
