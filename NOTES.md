@@ -74,6 +74,22 @@ public class Perro extends Mascota implements Canino {
 }
 ```
 
+## Encapsulamiento: 
+### Modificadores de acceso: 
+```text
+- Public: acceso al atrubuto o al metodo desde cualquier otra clase del proyecto.
+
+- Protected: acceso desde la misma clase, acceso desde el mismo paquete y de las 
+clases que hereden de ella.
+
+- Private: Solo se puede acceder desde la misma clase, para obtener el acceso a los 
+metodos se debe hacer con los metodos Get() and Set() ya que estos deben ser 
+metodos publicos y estos se usan para obtener el valor de un atributo desde fuera
+de la clase. 
+
+```
+
+
 
 
 
