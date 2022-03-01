@@ -1,14 +1,20 @@
 ## Tipos de Datos Primitivos en Java
 
 ```text
-byte.
-short.
-int.
-long.
-float.
-double.
-boolean.
-char.
+- byte.
+- short.
+- int.
+- long.
+- float.
+- double.
+- boolean.
+- char.
+```
+
+## Tipos de datos estructurados
+```text
+- Cadenas de caracteres -> String
+- Vectores o arrays
 ```
 
 ## Para darle una mirada a las listas: 
@@ -50,8 +56,8 @@ public interface Canino
 }
 ```
 
-# Para solucioner el tema de la herencia multiple
-## NOTA: Java solo puede heredar de una sola clase: 
+## Para solucionar el tema de la herencia multiple
+### NOTA: Java solo puede heredar de una sola clase: 
 
 ```text
 * Con la condicion que ya tenemos la clase abstracta con al menos una metodo abstracto declarado.
