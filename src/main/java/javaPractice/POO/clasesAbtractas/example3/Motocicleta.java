@@ -27,7 +27,7 @@ public class Motocicleta extends Vehiculo {
 
     @Override
     public boolean frenarSeguro() {
-        if (this.frenosAbs != true) {
+        if (this.getFrenosAbs() != true) {
             return false;
         } else {
             return true;

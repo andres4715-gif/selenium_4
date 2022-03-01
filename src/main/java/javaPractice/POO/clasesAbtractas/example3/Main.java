@@ -13,7 +13,7 @@ public class Main {
 
         System.out.println();
         System.out.println("----Motocicleta-----");
-        Motocicleta m1 = new Motocicleta("Motocicleta", 2, false, "Auteco", "Agility", 2022, "Negro", 150, true, false);
+        Motocicleta m1 = new Motocicleta("Motocicleta", 2, false, "Auteco", "Agility", 2022, "Negro", 150, true, true);
         m1.agarraderas(1);
         System.out.println("La " + m1.tipoVehiculo + " tiene " + m1.cantidadLlantas(2) + " llantas");
         System.out.println("La " + m1.tipoVehiculo + " frena seguro: " + m1.frenarSeguro());

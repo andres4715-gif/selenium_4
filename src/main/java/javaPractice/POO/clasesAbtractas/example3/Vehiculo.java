@@ -12,7 +12,11 @@ public abstract class Vehiculo {
     protected int capacidadCarga;
     protected Long propiedad;
     protected boolean combustible;
-    protected boolean frenosAbs = true;
+    private boolean frenosAbs;
+
+    public boolean getFrenosAbs() {
+        return frenosAbs;
+    }
 
     // Constructor
     public Vehiculo(String tipoVehiculo, int cantidadLlantas, boolean alas, String marca, String modelo, int anio, String color, int capacidadCarga, boolean combustible, boolean frenosAbs) {
