@@ -32,4 +32,17 @@ Selenium Framework for Beginners 12 | What is Desired Capabilities | How to add 
 
 1. [Your Website to practice](https://trytestingthis.netlify.app/)
 
+# JENKINS:
+Then Start the Jenkins service:
+
+```shell
+$ jenkins-lts
+```
+
+Now is possible to run Jenkins service on the local host:
+
+-> Open the local host on the browser
+
+http://localhost:8080/
+
 
