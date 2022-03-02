@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="6" failures="0" name="TestSuite" time="9.975" errors="0" skipped="0">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="JOB_NAME" value="Selenium3and4"/>
+    <property name="PWD" value="/Users/andresrios"/>
+    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8080/job/Selenium3and4/3/display/redirect?page=tests"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="JENKINS_HOME" value="/Users/andresrios/.jenkins"/>
+    <property name="PATH" value="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/bin/:/Users/andresrios/Library/Android/sdk/platform-tools:/Users/andresrios/Library/Android/sdk/build-tools/30.0.3:/Users/andresrios/Library/Android/sdk/tools:/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/bin:/Users/andresrios/development/flutter/bin"/>
+    <property name="JAVA_MAIN_CLASS_86100" value="Main"/>
+    <property name="LSCOLORS" value="Gxfxcxdxbxegedabagacad"/>
+    <property name="HUDSON_SERVER_COOKIE" value="c44874c804243808"/>
+    <property name="POM_ARTIFACTID" value="selenium4_UI"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="TERM_PROGRAM" value="iTerm.app"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/jre/classes"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="TERM_SESSION_ID" value="w0t0p0:3F1590B0-A969-4DDC-BADE-3BC394537833"/>
+    <property name="COLORFGBG" value="15;0"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="selenium4_UI"/>
+    <property name="NODE_LABELS" value="built-in"/>
+    <property name="java.runtime.version" value="1.8.0_291-b10"/>
+    <property name="user.name" value="andresrios"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="user.language" value="en"/>
+    <property name="JOB_BASE_NAME" value="Selenium3and4"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/Selenium3and4/3/display/redirect?page=changes"/>
+    <property name="COMMAND_MODE" value="unix2003"/>
+    <property name="BUILD_DISPLAY_NAME" value="#3"/>
+    <property name="TMPDIR" value="/var/folders/kp/xmc1m05x59jc_bdpn21lc37w0000gn/T/"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/jre/lib"/>
+    <property name="java.version" value="1.8.0_291"/>
+    <property name="XPC_FLAGS" value="0x0"/>
+    <property name="P9K_TTY" value="old"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="NODE_NAME" value="built-in"/>
+    <property name="TERM" value="xterm-256color"/>
+    <property name="ZSH" value="/Users/andresrios/.oh-my-zsh"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="BUILD_ID" value="3"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="SHELL" value="/bin/zsh"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="maven.conf" value="/Users/andresrios/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/conf"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="CO"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="10.16"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/Selenium3and4/3/display/redirect"/>
+    <property name="POM_VERSION" value="1.0-SNAPSHOT"/>
+    <property name="sun.font.fontmanager" value="sun.font.CFontManager"/>
+    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8080/job/Selenium3and4/3/display/redirect?page=artifacts"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.version" value="25.291-b10"/>
+    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/job/Selenium3and4/display/redirect"/>
+    <property name="SHLVL" value="1"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="JAVA_HOME" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="LOGNAME" value="andresrios"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="HOME" value="/Users/andresrios"/>
+    <property name="LC_TERMINAL_VERSION" value="3.4.15"/>
+    <property name="POM_GROUPID" value="org.example"/>
+    <property name="user.home" value="/Users/andresrios"/>
+    <property name="BUILD_TAG" value="jenkins-Selenium3and4-3"/>
+    <property name="JENKINS_SERVER_COOKIE" value="c44874c804243808"/>
+    <property name="P9K_SSH" value="0"/>
+    <property name="HUDSON_URL" value="http://localhost:8080/"/>
+    <property name="XPC_SERVICE_NAME" value="0"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.library.path" value="/Users/andresrios/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="LC_TERMINAL" value="iTerm2"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="_P9K_TTY" value="/dev/ttys002"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="/Users/andresrios/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven"/>
+    <property name="java.class.path" value="/Users/andresrios/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-agent-1.13.jar:/Users/andresrios/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/boot/plexus-classworlds-2.6.0.jar:/Users/andresrios/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main /Users/andresrios/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven /Users/andresrios/.jenkins/war/WEB-INF/lib/remoting-4.11.2.jar /Users/andresrios/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.13.jar /Users/andresrios/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.13.jar 63176"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="jansi.mode" value="strip"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="/Users/andresrios/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven"/>
+    <property name="java.io.tmpdir" value="/var/folders/kp/xmc1m05x59jc_bdpn21lc37w0000gn/T/"/>
+    <property name="CI" value="true"/>
+    <property name="HUDSON_HOME" value="/Users/andresrios/.jenkins"/>
+    <property name="PATH+MAVEN" value="/Users/andresrios/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/bin"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/Selenium3and4/3/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="PAGER" value="less"/>
+    <property name="ITERM_PROFILE" value="Default"/>
+    <property name="SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.QEOzhYQ296/Listeners"/>
+    <property name="LC_CTYPE" value="UTF-8"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.ext.dirs" value="/Users/andresrios/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="__CF_USER_TEXT_ENCODING" value="0x1F5:0x0:0x0"/>
+    <property name="user.dir" value="/Users/andresrios/Documents/AndresRios/AutomationGuild/selenium_4"/>
+    <property name="JOB_URL" value="http://localhost:8080/job/Selenium3and4/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="MAVEN_HOME" value="/Users/andresrios/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="3"/>
+    <property name="ANDROID_HOME" value="/Users/andresrios/Library/Android/sdk"/>
+    <property name="JENKINS_URL" value="http://localhost:8080/"/>
+    <property name="TERM_PROGRAM_VERSION" value="3.4.15"/>
+    <property name="ANDROID_SDK_ROOT" value="/Users/andresrios/Library/Android/sdk"/>
+    <property name="COLORTERM" value="truecolor"/>
+    <property name="ITERM_SESSION_ID" value="w0t0p0:3F1590B0-A969-4DDC-BADE-3BC394537833"/>
+    <property name="__CFBundleIdentifier" value="com.googlecode.iterm2"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="LESS" value="-R"/>
+    <property name="maven3.interceptor" value="/Users/andresrios/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.13.jar"/>
+    <property name="WORKSPACE_TMP" value="/Users/andresrios/.jenkins/workspace/Selenium3and4@tmp"/>
+    <property name="WORKSPACE" value="/Users/andresrios/.jenkins/workspace/Selenium3and4"/>
+    <property name="maven3.interceptor.common" value="/Users/andresrios/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.13.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="USER" value="andresrios"/>
+  </properties>
+  <testcase classname="test.examples.selenium3.GoogleSearchPomTest" name="goobleSearch" time="4.968"/>
+  <testcase classname="test.examples.selenium3.TestNgTestExecution" name="tc01LaunchURL" time="3.35"/>
+  <testcase classname="test.examples.selenium3.TestNgTestExecution" name="tc02VerifyLaunchPage" time="0.046"/>
+  <testcase classname="test.examples.selenium3.TestNgTestExecution" name="tc03EnterCredentials" time="1.567"/>
+  <testcase classname="test.examples.selenium3.TestNgTestExecution" name="tc04VerifyLoggedInPage" time="0.022"/>
+  <testcase classname="test.examples.selenium3.TestNgTestExecution" name="tc05VerifyHyperlinks" time="0.022"/>
+</testsuite>
