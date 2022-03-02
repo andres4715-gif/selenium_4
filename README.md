@@ -44,6 +44,3 @@ Now is possible to run Jenkins service on the local host:
 -> Open the local host on the browser
 
 http://localhost:8080/
-
-
-check 
