@@ -9,8 +9,6 @@ public abstract class HomeAppliances {
 
     private int energyStatus;
     private boolean status;
-    private String trademark;
-    private int model;
 
     public HomeAppliances(int energyStatus, boolean status) {
         this.energyStatus = energyStatus;

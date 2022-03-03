@@ -44,4 +44,12 @@ public class WashingMachine extends HomeAppliances implements HomeAppliancesComm
     public String code(String code) {
         return code;
     }
+
+    boolean showTime(int show) {
+        if(show == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }

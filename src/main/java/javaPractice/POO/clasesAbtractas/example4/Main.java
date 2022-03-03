@@ -12,6 +12,7 @@ public class Main {
         System.out.println("The wachingMmchine code is: " + ((WashingMachine) obj1).code("C0001"));
         System.out.println("The tradeMark is: " + ((WashingMachine) obj1).tradeMark);
         System.out.println("The model is: " + ((WashingMachine) obj1).model);
+        System.out.println("This shows time: " + ((WashingMachine) obj1).showTime(1));
 
         System.out.println("***** Microware =====");
         obj1 = new Microware(1, false, "SAMSUNG", 8976);
