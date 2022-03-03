@@ -10,6 +10,8 @@ public class Main {
         System.out.println("The wachingMmchine does: " + obj1.action());
         System.out.println("The wachingMmchine serial is: " + obj1.serial("UIJHJHYU89876"));
         System.out.println("The wachingMmchine code is: " + obj1.code("C0001"));
+        System.out.println("The tradeMark is: " + obj1.tradeMark);
+        System.out.println("The model is: " + obj1.model);
 
         System.out.println("***** Microware =====");
         Microware obj2 = new Microware(1, false, "SAMSUNG", 8976);
@@ -18,6 +20,8 @@ public class Main {
         System.out.println("The Microware does: " + obj2.action());
         System.out.println("The Microware serial is: " + obj2.serial("S8987UY7"));
         System.out.println("The Microware code is: " + obj2.code("COOO99"));
+        System.out.println("The tradeMark is: " + obj2.tradeMark);
+        System.out.println("The model is: " + obj2.model);
 
         System.out.println("***** Stove =====");
         Stove obj3 = new Stove(1, true, "HACEB", 11111);
@@ -26,13 +30,17 @@ public class Main {
         System.out.println("The Stove does: " + obj3.action());
         System.out.println("The Stove serial is: " + obj3.serial("TIOIKJK8"));
         System.out.println("The Stove code is: " + obj3.code("STOVE909IU8"));
+        System.out.println("The tradeMark is: " + obj3.tradeMark);
+        System.out.println("The model is: " + obj3.model);
 
         System.out.println("***** ElectricSweeper =====");
-        ElectricSweeper obj4 = new ElectricSweeper(0, false, "XIOMI", 2222);
+        ElectricSweeper obj4 = new ElectricSweeper(0, false, "XIAOMI", 2222);
         System.out.println("The ElectricSweeper is conected: " + obj4.conected());
         System.out.println("The ElectricSweeper is working: " + obj4.working());
         System.out.println("The ElectricSweeper does: " + obj4.action());
         System.out.println("The ElectricSweeper serial is: " + obj4.serial("ST"));
         System.out.println("The ElectricSweeper code is: " + obj4.code("Sweeper909IKK"));
+        System.out.println("The tradeMark is: " + obj4.tradeMark);
+        System.out.println("The model is: " + obj4.model);
     }
 }
