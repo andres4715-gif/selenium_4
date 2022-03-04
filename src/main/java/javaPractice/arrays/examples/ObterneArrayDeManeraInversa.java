@@ -1,4 +1,4 @@
-package javaPractice.arrays;
+package javaPractice.arrays.examples;
 
 
 // FUENTE: http://buenasintencions.blogspot.com/2011/12/archivo-invertirarreglo.html

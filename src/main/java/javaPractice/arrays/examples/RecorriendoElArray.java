@@ -1,7 +1,7 @@
 // Ejemplo: Pedir 10 números por teclado y obtener la suma,
 // el número menor, el número  mayor
 
-package javaPractice.arrays;
+package javaPractice.arrays.examples;
 
 import java.util.Scanner;
 

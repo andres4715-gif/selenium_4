@@ -1,4 +1,4 @@
-package javaPractice.arrays;
+package javaPractice.arrays.examples;
 
 public class ObteniendoDatosDelArray {
 

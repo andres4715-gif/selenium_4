@@ -1,4 +1,4 @@
-package javaPractice.arrays;
+package javaPractice.arrays.examples;
 
 import java.util.ArrayList;
 import java.util.Arrays;
