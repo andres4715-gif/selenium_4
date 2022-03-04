@@ -32,6 +32,10 @@ Selenium Framework for Beginners 12 | What is Desired Capabilities | How to add 
 
 1. [Your Website to practice](https://trytestingthis.netlify.app/)
 
+# Pages to check some information about Array List
+
+1. [Array list 1](https://w3api.com/Java/ArrayList/)
+
 # JENKINS:
 Then Start the Jenkins service:
 
