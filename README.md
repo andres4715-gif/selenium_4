@@ -28,13 +28,14 @@ Selenium Framework for Beginners 12 | What is Desired Capabilities | How to add 
 
 [Responsive youtube](https://www.youtube.com/watch?v=RHtCRDu0MWs)
 
-# practice Automation
+# FAKE Pages to practice Automation 
 
 1. [Your Website to practice](https://trytestingthis.netlify.app/)
 
 # Pages to check some information about Array List
 
 1. [Array list 1](https://w3api.com/Java/ArrayList/)
+2. [Methods llst](https://w3api.com/Java/ArrayList/clone/)
 
 # JENKINS:
 Then Start the Jenkins service:

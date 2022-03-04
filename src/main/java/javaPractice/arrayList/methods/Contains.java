@@ -4,19 +4,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Add {
+public class Contains {
 
     public static void main(String[] args) {
-
-        String[] newFruitList = {"Uva", "fresa", "Maraculla", "Lulo", "tomate de arbol"};
-
         List<String> myNewList = new ArrayList<>(Arrays.asList(myArray1()));
 
-        for (String newData : newFruitList) {
-            myNewList.add(newData);
+        for (String data : myNewList) {
+            boolean checkIfExist = data.contains(myNewList.get(0));
+            System.out.println(checkIfExist);
         }
-
-        System.out.println("La nueva lista es: " + myNewList);
     }
 
     static String[] myArray1() {
