@@ -11,6 +11,20 @@
 - char.
 ```
 
+## Convertir un array de numeros a una lista: 
+```shell
+int[] myArray = {2, 12, 34, 56, 1, 76, 87, 29, 676, 76, 7,};
+
+        ArrayList<Integer> nyList = (ArrayList<Integer>) Arrays.stream(myArray).boxed().collect(Collectors.toList());
+```
+
+## Convertir un array de string a una lista: 
+```shell
+        String[] myArray = {"Andres", "Camilo", "Juan", "Alejandra"};
+
+        List<String> nyList = new ArrayList<>(Arrays.asList(myArray));
+```
+
 ## Tipos de datos estructurados
 ```text
 - Cadenas de caracteres -> String
