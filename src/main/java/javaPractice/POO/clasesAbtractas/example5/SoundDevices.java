@@ -33,9 +33,3 @@ public abstract class SoundDevices {
 
     public abstract boolean buttonPress();
 }
-
-// en la interface
-// dimenciones de empaque
-// dueño
-
-
