@@ -11,6 +11,12 @@
 - char.
 ```
 
+## Cuales son los metodos que se pueden aplicar 
+
+[Metodos para la clase String](https://tinchicus.com/2019/04/12/java-metodos-para-la-clase-string/)
+
+[Java Integer Methods](https://www.javatpoint.com/java-integer)
+
 ## Convertir un array de numeros a una lista: 
 ```shell
 int[] myArray = {2, 12, 34, 56, 1, 76, 87, 29, 676, 76, 7,};
@@ -23,6 +29,22 @@ int[] myArray = {2, 12, 34, 56, 1, 76, 87, 29, 676, 76, 7,};
         String[] myArray = {"Andres", "Camilo", "Juan", "Alejandra"};
 
         List<String> nyList = new ArrayList<>(Arrays.asList(myArray));
+        
+        ----->  Otra forma aplicando los stream  <-----
+        
+        static String[] data = {"a1", "a2", "b1", "c2", "c1"};
+        
+            static void hola() {
+        List<String> myList = Arrays.asList(data);
+
+        myList
+                .stream()
+                .filter(s -> s.startsWith("c"))
+                .map(String::toUpperCase)
+                .sorted()
+                .collect(Collectors.toList());
+        System.out.println(myList);
+    }
 ```
 
 ## Tipos de datos estructurados
