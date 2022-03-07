@@ -45,6 +45,21 @@ int[] myArray = {2, 12, 34, 56, 1, 76, 87, 29, 676, 76, 7,};
                 .collect(Collectors.toList());
         System.out.println(myList);
     }
+    
+     ----->  Otra forma aplicando los stream  <-----
+    
+        String[] data = {"a1", "a2", "a3"};
+
+        Arrays.asList(data)
+                .stream()
+                .findFirst()
+                .ifPresent(System.out::println);  // a1
+                
+    ----->  Otra forma de obtener stream  <-----
+    
+    Stream.of("a1", "a2", "a3")
+      .findFirst()
+      .ifPresent(System.out::println);  // a1
 ```
 
 ## Tipos de datos estructurados
