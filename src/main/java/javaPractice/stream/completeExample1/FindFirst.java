@@ -1,4 +1,4 @@
-package javaPractice.ejercicios.stream.completeExample1;
+package javaPractice.stream.completeExample1;
 
 import java.util.Arrays;
 

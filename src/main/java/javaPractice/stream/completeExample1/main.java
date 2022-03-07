@@ -1,4 +1,4 @@
-package javaPractice.ejercicios.stream.completeExample1;
+package javaPractice.stream.completeExample1;
 
 public class main {
     public static void main(String[] args) {
