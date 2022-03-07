@@ -23,6 +23,5 @@ public class ArrayToList {
                 .map(String::toUpperCase)
                 .sorted()
                 .forEach(System.out::println);
-
     }
 }
