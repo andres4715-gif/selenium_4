@@ -13,6 +13,13 @@
 Video [8](https://www.youtube.com/watch?v=1cAvnrnn5cY&list=PLhW3qG5bs-L_8bwNnMHdJ1Wq5M0sUmpSH&index=8)
 Selenium 4 Beginner Tutorial 8 | Keyboard Actions
 
+
+# I need to continue with this video tutorials: 
+[Video tutorial 1](https://www.youtube.com/watch?v=4e9vhX7ZuCw&list=PLhW3qG5bs-L_mFHirOLEYJ7X2rIXu8SR2)
+
+[Video tutorial 2](https://www.youtube.com/watch?v=HOf0qkOUSUs&list=PLL34mf651faNP0ISiU3oQFmRQRis-9blX)
+
+
 # selenium 3 with Maven.
 
 ### Video youtube course: [Link](https://www.youtube.com/watch?v=nCJoia7wosc&list=PLhW3qG5bs-L8oRay6qeS70vJYZ3SBQnFa&index=1&t=135s)
