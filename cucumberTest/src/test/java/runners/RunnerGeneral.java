@@ -10,6 +10,8 @@ import io.cucumber.testng.CucumberOptions;
         // , plugin = {"pretty","json:target/JSONReports/report.json"}
         // , plugin = {"pretty","html:target/HTMLReports/report.xml"}
         , plugin = {"pretty","html:target/HTMLReports/report.html"}
+        , tags = "" // Example => @smoketest
+
 )
 public class RunnerGeneral extends AbstractTestNGCucumberTests {
 
