@@ -9,8 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
-import java.util.Locale;
-
 public class SearchSteps {
 
     WebDriver driver;
@@ -37,8 +35,6 @@ public class SearchSteps {
         String titleResultPage = driver.findElement(By.cssSelector("[class='lighter']")).getText();
         Assert.assertEquals(titleResultPage, "\"" + clothes.toUpperCase() + "\"");
 
-        Thread.sleep(1000);
-        driver.close();
         driver.quit();
     }
 }
