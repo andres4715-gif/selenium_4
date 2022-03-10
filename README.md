@@ -38,6 +38,7 @@ Selenium Framework for Beginners 12 | What is Desired Capabilities | How to add 
 # FAKE Pages to practice Automation 
 
 1. [Your Website to practice](https://trytestingthis.netlify.app/)
+2. [testProject.io](https://example.testproject.io/web/)
 
 # Pages to check some information about Array List
 
