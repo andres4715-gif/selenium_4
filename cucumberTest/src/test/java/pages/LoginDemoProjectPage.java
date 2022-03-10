@@ -5,12 +5,12 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginDemoProjectPage {
 
-    WebDriver driver;
+    protected WebDriver driver;
 
-    By userName = By.id("name");
-    By password = By.id("password");
-    By login = By.id("login");
-    By logOut = By.id("logout");
+    private By userName = By.id("name");
+    private By password = By.id("password");
+    private By login = By.id("login");
+    private By logOut = By.id("logout");
 
     // Constructor
     public LoginDemoProjectPage(WebDriver driver) {
