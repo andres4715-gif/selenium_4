@@ -6,6 +6,10 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/java/resources/features"
         , glue = {"stepDefinition"}
+        , monochrome = true
+        // , plugin = {"pretty","json:target/JSONReports/report.json"}
+        // , plugin = {"pretty","html:target/HTMLReports/report.xml"}
+        , plugin = {"pretty","html:target/HTMLReports/report.html"}
 )
 public class RunnerGeneral extends AbstractTestNGCucumberTests {
 
