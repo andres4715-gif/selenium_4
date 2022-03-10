@@ -16,5 +16,3 @@ Feature: Test Login functionality
       | Raghav   | 12345    |
       | Andres   | 12345    |
       | Carlos   | 12345    |
-
-
