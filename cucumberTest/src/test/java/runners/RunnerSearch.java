@@ -7,6 +7,6 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/java/resources/features/search.feature"
         , glue = "stepDefinition"
 )
-public class RunnerCucumberTest extends AbstractTestNGCucumberTests {
+public class RunnerSearch extends AbstractTestNGCucumberTests {
 
 }
