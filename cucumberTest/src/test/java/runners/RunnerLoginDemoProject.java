@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
         , glue = "stepDefinition"
         , monochrome = true
         , plugin = {"pretty", "html:target/HTMLReports/report.html"}
-        , tags = "" // Example => "{@smoketest}"
+        , tags = "" // Example => "{@smoketest}"  // (and) and (or) is aplicable with this feature
 )
 public class RunnerLoginDemoProject extends AbstractTestNGCucumberTests {
 
