@@ -1,4 +1,5 @@
 Feature: Search
+  @smoketest
   Scenario Outline: Search clothes
 
     Given the user is in the index page
