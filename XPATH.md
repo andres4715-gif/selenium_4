@@ -11,6 +11,7 @@ Example
 ```
 
 ## Start with
+- Aplica cuando los elementos son dinamicos
 
 ```shell
 XPath: //tagname[starts.vith(@Attibute, 'value')]
