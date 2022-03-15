@@ -6,7 +6,9 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import pages.LoginDemoProjectPage;
@@ -17,23 +19,13 @@ public class LoginDemoProject {
     WebDriver driver;
     LoginDemoProjectPage loginPageElements;
 
-    @Before
-    public void driverOptions() {
-        System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
-        driver = new FirefoxDriver();
+    @Given("^the user is on the login project page$")
+    public void the_user_is_on_the_login_project_page() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-    }
-
-    @After
-    public void afterTest() throws InterruptedException {
-        Thread.sleep(1000);
-        driver.quit();
-    }
-
-    @Given("^the user is on the login project page$")
-    public void the_user_is_on_the_login_project_page() {
         driver.get("https://example.testproject.io/web/");
     }
 
@@ -52,9 +44,11 @@ public class LoginDemoProject {
     }
 
     @Then("^the user can check if this is valid credentials$")
-    public void the_user_can_check_if_this_is_valid_credentials() {
+    public void the_user_can_check_if_this_is_valid_credentials() throws InterruptedException {
         loginPageElements = new LoginDemoProjectPage(driver);
         boolean checkLogOut = loginPageElements.clickLogOutButton();
         Assert.assertTrue(checkLogOut);
+        Thread.sleep(1000);
+        driver.quit();
     }
 }

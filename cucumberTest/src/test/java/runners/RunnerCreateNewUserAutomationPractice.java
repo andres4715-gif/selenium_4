@@ -11,6 +11,6 @@ import io.cucumber.testng.CucumberOptions;
         , plugin = {"pretty", "html:target/HTMLReports/report.html"}
         , tags = "" // Example => "{@smoketest}"  // (and) and (or) is aplicable with this feature
 )
-public class RunnerRunnerLoginDemoProject extends AbstractTestNGCucumberTests {
+public class RunnerCreateNewUserAutomationPractice extends AbstractTestNGCucumberTests {
 
 }

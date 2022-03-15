@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/java/resources/features/loginDemoProject.feature"
         , glue = "stepDefinition"
-        , monochrome = true
+        , monochrome = false
         , dryRun = false
         , plugin = {"pretty", "html:target/HTMLReports/report.html"}
         , tags = "" // Example => "{@smoketest}"  // (and) and (or) is aplicable with this feature

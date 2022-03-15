@@ -1,12 +1,14 @@
 package stepDefinition;
 
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import pages.AuthenticationPage;
 import pages.AutomationPracticeHomePagePage;
@@ -18,10 +20,11 @@ public class StepDefinitionCreateNewAccountAutmaionPractice {
     WebDriver driver;
     CreateAndAccoutnPage createAnAccountPage;
 
+
     @Before
     public void driverOptions() {
-        System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
-        driver = new FirefoxDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
@@ -32,6 +35,8 @@ public class StepDefinitionCreateNewAccountAutmaionPractice {
         Thread.sleep(1000);
         driver.quit();
     }
+
+
 
     @Given("^the user is on the home page Automatio logo$")
     public void the_user_is_on_the_home_page_automatio_logo() {

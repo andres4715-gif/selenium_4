@@ -5,7 +5,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
@@ -15,8 +17,8 @@ public class LoginSteps {
 
     @Given("^the user is on the login page$")
     public void the_user_is_on_the_login_page() {
-        System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
-        driver = new FirefoxDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.get("http://automationpractice.com/index.php");
     }
 
