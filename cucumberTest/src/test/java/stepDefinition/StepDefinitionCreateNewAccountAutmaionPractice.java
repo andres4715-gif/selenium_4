@@ -1,8 +1,5 @@
 package stepDefinition;
 
-
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -20,7 +17,7 @@ public class StepDefinitionCreateNewAccountAutmaionPractice {
     WebDriver driver;
     CreateAndAccoutnPage createAnAccountPage;
 
-
+/*
     @Before
     public void driverOptions() {
         WebDriverManager.chromedriver().setup();
@@ -35,11 +32,15 @@ public class StepDefinitionCreateNewAccountAutmaionPractice {
         Thread.sleep(1000);
         driver.quit();
     }
-
-
+ */
 
     @Given("^the user is on the home page Automatio logo$")
     public void the_user_is_on_the_home_page_automatio_logo() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         driver.get("http://automationpractice.com/index.php");
     }
 
@@ -64,8 +65,10 @@ public class StepDefinitionCreateNewAccountAutmaionPractice {
     }
 
     @Then("^the user can check the create an account page$")
-    public void the_user_can_check_the_create_an_account_page() {
+    public void the_user_can_check_the_create_an_account_page() throws InterruptedException {
         createAnAccountPage  = new CreateAndAccoutnPage(driver);
         Assert.assertTrue(createAnAccountPage.checkCreateAnAccountLabe());
+        Thread.sleep(1000);
+        driver.quit();
     }
 }
