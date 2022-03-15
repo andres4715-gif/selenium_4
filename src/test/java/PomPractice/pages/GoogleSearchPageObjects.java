@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class GoogleSearchPageObjects {
 
     // driver call
-    WebDriver driver;
+    protected WebDriver driver;
 
     // Locators
     By texBoxSearch = By.name("q");

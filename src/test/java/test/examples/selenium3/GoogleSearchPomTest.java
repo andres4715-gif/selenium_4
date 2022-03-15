@@ -21,7 +21,6 @@ public class GoogleSearchPomTest {
 
     @Test(priority = 1, alwaysRun = true)
     public void goobleSearch() {
-
         driver.get("https://www.google.com/");
         GoogleSearchPage.textBoxSearch(driver).sendKeys("This is with POM", Keys.ENTER);
     }

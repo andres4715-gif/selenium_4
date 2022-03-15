@@ -30,6 +30,7 @@ public class Browser {
         System.out.println(driver.getCurrentUrl());
         System.out.println(driver.getTitle());
 
+        System.out.println("---------------------------------------");
         // Windows back, fordward and refresh
         driver.navigate().back();
         Thread.sleep(1000);

@@ -26,6 +26,7 @@ public class Waits {
         // Explicit wait
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
+        // Esperar un elemento especifico:
         driver.findElement(By.name("q")).sendKeys("Automation step by step" + Keys.ENTER);
         WebElement myLink = wait.until(ExpectedConditions.elementToBeClickable(By.partialLinkText("Automation Step by Step:")));
         myLink.click();
