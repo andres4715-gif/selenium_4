@@ -4,6 +4,7 @@
 # files
 .idea/
 target/
+selenium4_UI.iml
 
 # Log file
 *.log
