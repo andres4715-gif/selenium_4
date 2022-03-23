@@ -5,6 +5,7 @@
 .idea/
 target/
 selenium4_UI.iml
+drivers/
 
 # Log file
 *.log
