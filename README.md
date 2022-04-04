@@ -57,3 +57,7 @@ Now is possible to run Jenkins service on the local host:
 -> Open the local host on the browser
 
 http://localhost:8080/
+___
+
+## Practicing Java Streams 
+You can follow this [video tutorial](https://www.youtube.com/watch?v=33JrZGtKOEE&list=PLUDwpEzHYYLvTPVqVIt7tlBohABLo4gyg)
