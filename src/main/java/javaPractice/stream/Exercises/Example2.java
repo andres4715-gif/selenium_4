@@ -10,7 +10,7 @@ public class Example2 {
         String[] data = {"Andres", "Liliana", "Carlos", "Alejandro"};
         List<String> myOwnList = Arrays.asList(data);
 
-        List List2 = myOwnList
+        List<String> List2 = myOwnList
                 .stream()
                 .filter(s -> s.startsWith("A"))
                 .sorted()

@@ -13,7 +13,7 @@ public class Example3 {
 
         List<String> nyList = new ArrayList<>(Arrays.asList(myArray));
 
-        List data = nyList
+        List<String> data = nyList
                 .stream()
                 .filter(s -> s.startsWith("A"))
                 .sorted()
