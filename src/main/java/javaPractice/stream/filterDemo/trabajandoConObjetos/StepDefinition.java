@@ -8,7 +8,6 @@ public class StepDefinition {
 
     public static List<Usuarios> checkig() {
 
-        String miarray;
         List<Usuarios> youngPeople;
 
         List<Usuarios> user = new ArrayList<>();
