@@ -14,14 +14,14 @@ public class Example4 {
 
         ArrayList<Integer> nyList = (ArrayList<Integer>) Arrays.stream(myArray).boxed().collect(Collectors.toList());
 
-        List less = nyList
+        List<Integer> less = nyList
                 .stream()
                 .filter(s -> s < value)
                 .sorted()
                 .collect(Collectors.toList());
         System.out.println("Numbers less than " + value + ": " + less);
 
-        List greater = nyList
+        List<Integer> greater = nyList
                 .stream()
                 .filter(s -> s > value)
                 .sorted()
