@@ -167,4 +167,36 @@ public class TestAutomationPracticeEcommercePage {
         System.out.println("The number of element in the new list is: " + numberOfelementNewList);
         Assert.assertTrue(numberOfelementNewList > 2);
     }
+
+    @Test
+    public void radioButton() {
+        WebElement submitSearch = driver.findElement(By.cssSelector(".ico-register"));
+        submitSearch.click();
+        List<WebElement> gender = driver.findElements(By.cssSelector(("[id='gender'] span")));
+        gender.get(0).click();
+        WebElement firstName = driver.findElement(By.cssSelector("#FirstName"));
+        firstName.sendKeys("Andres");
+        firstName.clear();
+        gender.get(1).click();
+        firstName.sendKeys("Liliana");
+    }
+
+    @Test
+    public void verifyCheckboxIsSelected() {
+        WebElement submitSearch = driver.findElement(By.cssSelector(".ico-register"));
+        submitSearch.click();
+
+        WebElement element = driver.findElement(By.xpath("//label[@for='Newsletter']"));
+
+        JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+        javascriptExecutor.executeScript("arguments[0].scrollIntoView();", element);
+
+        WebElement newsletter = driver.findElement(By.id("Newsletter"));
+        boolean checkNewLetter = newsletter.isSelected();
+        System.out.println(checkNewLetter);
+
+        newsletter.click();
+        boolean checkNewLetter2 = newsletter.isSelected();
+        System.out.println(checkNewLetter2);
+    }
 }
