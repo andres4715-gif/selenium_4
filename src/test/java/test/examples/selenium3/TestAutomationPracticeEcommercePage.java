@@ -2,9 +2,13 @@ package test.examples.selenium3;
 
 import PomPractice.pages.Setup;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.Assert.*;
@@ -36,22 +40,44 @@ public class TestAutomationPracticeEcommercePage {
     }
 
     @Test
-    public void correctCredentials() {
-
+    public void checkingTheUrl() {
+        String currentUrl = driver.getCurrentUrl();
+        System.out.println("The obtained url is: " + currentUrl);
+        Assert.assertEquals("https://demo.nopcommerce.com/", currentUrl);
     }
 
     @Test
-    public void wrongCredentials() {
+    public void gettingText() {
+        String webElementToGetValue1 = driver.findElement(By.cssSelector(".ico-register")).getText();
+        System.out.println("The obtained text is: " + webElementToGetValue1);
 
+        // Another way:
+        WebElement webElementToGetValue2 = driver.findElement(By.cssSelector(".ico-register"));
+        String obtainedText = webElementToGetValue2.getText();
+
+        System.out.println("The obtained text is: " + obtainedText);
     }
 
     @Test
-    public void invalidEmail() {
+    public void checkWeGetTheCorrectValue() {
+        String webElementToGetValud = driver.findElement(By.cssSelector(".ico-register")).getText();
+        // String obtainedText = webElementToGetValud.getText();
 
+        System.out.println("The obtained text is: " + webElementToGetValud);
+        Assert.assertNotNull(webElementToGetValud);
+        Assert.assertEquals("REGISTER", webElementToGetValud);
     }
 
     @Test
-    public void EmptyCredentials() {
+    public void writeSomethingAndTappingEnter() {
+        driver.findElement(By.cssSelector("#small-searchterms"))
+                .sendKeys("iPhone", Keys.ENTER);
+    }
 
+    @Test
+    public void clearFieldValues() {
+        driver.findElement(By.cssSelector("#small-searchterms"))
+                .sendKeys("iPhone");
+        driver.findElement(By.cssSelector("#small-searchterms")).clear();
     }
 }
